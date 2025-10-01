@@ -39,6 +39,9 @@ public class CellPhoneApplication {
         display(phone1);
         display(phone2);
 
+        //static input for the receiving number
+        phone1.dial("876-487-0521");
+
         phone1.dial(phone2.getPhoneNumber());
         phone2.dial(phone1.getPhoneNumber());
 
