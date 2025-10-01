@@ -30,20 +30,25 @@ public class CellPhoneApplication {
         phone1.setOwner(ownerName);
 
         Cellphone phone2 = new Cellphone();
+
         phone2.setSerialNumber(98753);
         phone2.setModel("iPhone 6s Plus");
         phone2.setCarrier("AT&T");
         phone2.setPhoneNumber("932-473-0852");
         phone2.setOwner("Wyatt Blake");
 
+        Cellphone phone3 = new Cellphone(65323, "iPhone 15", "Sprint", "305-683-3475", "Sophia Walker");
+
         display(phone1);
         display(phone2);
+        display(phone3);
 
         //static input for the receiving number
         phone1.dial("876-487-0521");
 
         phone1.dial(phone2.getPhoneNumber());
         phone2.dial(phone1.getPhoneNumber());
+        phone1.dial(phone3);
 
         myScanner.close();
     }
